@@ -3,10 +3,10 @@ import Footer from '../components/Footer.astro';
 import Navbar from '../components/Navbar.astro';
 
 export interface Props {
-	title: string;
+	title?: string;
 }
 
-const { title } = Astro.props as Props;
+const { title='Activelava My site' } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
